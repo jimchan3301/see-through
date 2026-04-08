@@ -9,7 +9,6 @@ from einops import reduce
 import click
 import cv2
 import sys
-sys.path.append(osp.dirname(osp.dirname(osp.abspath(__file__))))
 
 from utils.io_utils import load_exec_list, pil_pad_square, pil_ensure_rgb, imglist2imgrid, find_all_files_with_name, dict2json, json2dict, load_image, save_tmp_img
 from live2d.scrap_model import Live2DScrapModel, compose_from_drawables, load_detected_character, init_drawable_visible_map, Drawable
